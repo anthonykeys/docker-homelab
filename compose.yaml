@@ -3,10 +3,10 @@ services:
     image: lscr.io/linuxserver/plex:latest
     container_name: plex
     volumes:
-      - /Media/appdata/plex:/config
-      - /Media/series:/tv
-      - /Media/movies:/movies
-      - /Media:/mymedia
+      - /home/anthony/media/appdata/plex:/config
+      - /home/anthony/media/series:/tv
+      - /home/anthony/media/movies:/movies
+      - /home/anthony/media:/mymedia
     network_mode: host
     environment:
       - PUID=1000
