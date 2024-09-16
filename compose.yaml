@@ -4,7 +4,7 @@ services:
     container_name: plex
     volumes:
       - /Media/appdata/plex:/config
-      - /Media/seris:/tv
+      - /Media/series:/tv
       - /Media/movies:/movies
       - /Media:/mymedia
     network_mode: host
